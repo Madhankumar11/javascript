@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agecalculator</title>
+    <link rel="stylesheet" href="age.css">
+</head>
+<body>
+    
+    <br>
+    <div class="container">
+        <h1 id="Head">AGE CALCULATOR</h1><br><br>
+        <input type="datetime-local" id="dob">
+        <button id="submit">calculate age</button>
+        <p id="year"></p>
+        <p id="month"></p>
+        <p id="week"></p>
+        <p id="day"></p>
+        <p id="hours"></p> 
+        <p id="minutes"></p>
+        <p id="seconds"></p>
+    </div>
+    <script>
+        document.querySelector("#submit").addEventListener('click',function(){
+        const age_calculator=function (){
+          let dob=document.querySelector("#dob").value,
+          
+          day=new Date(dob),
+          time=day.getTime(),
+          today=new Date(),
+          timenow=today.getTime(),
+          value=timenow-time,
+          sec=Math.floor(value/1000),
+          min=Math.floor(value/(1000*60)),
+          hours=Math.floor(value/(1000*60*60)),
+          days=Math.floor(value/(1000*60*60*24)),
+          week=Math.floor(value/(1000*60*60*24*7)),
+          month=Math.floor(value/(1000*60*60*24*30.437)),
+          year=Math.floor(value/(1000*60*60*24*365.25));
+          console.log(today)
+        
+          let insert=function(x,y){
+            document.querySelector(x).innerHTML=y
+          }
+            insert("#year",year+"-Years")
+            insert("#month",month+"-month")
+            insert("#week",week+"-Weeks")
+            insert("#day",days,+"-days")
+            insert("#hours",hours+"-hours")
+            insert("#minutes",min+"-minutes")
+            insert("#seconds",sec+"-seconds")
+          
+        }
+    
+        
+       
+        setInterval(age_calculator,1000)
+    })
+    </script>
+</body>
+</html>
