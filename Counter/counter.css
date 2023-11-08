@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+
+}
+.counter{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 240px;
+    background-color: blue;
+    margin-left: 440px;
+    border-radius: 15px;
+    border: none;
+    position: relative;
+}
+#counter{
+    font-size: 5rem;
+    margin: bottom 30px;
+
+    border: none;
+    
+}
+button{
+    width: 100px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    border: none;
+    background: white;
+}
+#increase{
+    right: -5%;
+}
+#Decrease{
+    right: 80%;
+}
+
