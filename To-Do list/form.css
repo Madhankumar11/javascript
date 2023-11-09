@@ -4,6 +4,9 @@ body{
     background-attachment: fixed;
     margin:0;
     font-family: 'Poppins', sans-serif; 
+    background-image: url(1.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .container{

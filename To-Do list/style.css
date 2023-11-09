@@ -8,6 +8,9 @@
 body {
     background-image: linear-gradient(to right, #605e7e, #6b73c1, #37b3cc);
     margin: 50px 2%;
+    background-image: url('1.webp');
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 /* container title */

@@ -4,6 +4,9 @@ body{
     background-attachment: fixed;
     margin:0;
     font-family: 'Poppins', sans-serif; 
+    background-image: url('1.webp');
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .container{
@@ -19,7 +22,7 @@ h1{
     color:#792099;
 }
 
-#form #register{
+.container button{
     background-color: #792099;
     color:white;
     border: 1px solid #792099;
@@ -65,9 +68,4 @@ h1{
 
 .input-group.error input{
     border-color:rgb(206, 67, 67);
-}
-#form .signin{
-    color: aqua;
- 
-
 }
