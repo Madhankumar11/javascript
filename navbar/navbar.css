@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    width: 100%;
+    background-color: black;
+    height: 50px;
+}
+h1{
+    color: yellow;
+    font-size: 1.5rem;
+    line-height: 50px;
+    padding-left: 12px;
+}
+.ul{
+    float: right;
+}
+.ul li{
+    
+    color: white;
+}
